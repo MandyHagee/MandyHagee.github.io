@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>30-Day Drawing Challenge, continued</title>
+
 	<style type="text/css">
+	
 		div {
 			/*original image: 1024x768, aspect ratio: 1.3333*/
 			width: 577px;
@@ -12,14 +14,19 @@
 			background-repeat: no-repeat;
 			z-index: -1;
 			position: absolute;
+			-webkit-animation-name: fuckyou;
+			animation-name: fuckyou;
+			animation-duration: 4s
 		}
-		div:click {
+
+		div {
 		background-image: url(nun.jpg);
 			z-index: -1;
 			background-position: 50% 30%;
 			position: absolute;	
 		}
-
+@-webkit-keyframes fuckyou {from {background-image: url(jesus.jpg);}
+to {background-image: url(nun.jpg);}
 		</style>
 
 <style type="text/css">
@@ -43,6 +50,7 @@
 	
 </style>
 	<button>Click for Salvation!</button>
+
 
 </head>
 <body>
