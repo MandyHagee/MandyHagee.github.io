@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <meta charset="utf-8">
+    <style>
+    div {
+    	width: 100px;
+    	height: 100px;
+    	background-color: lightblue;
+    	border-radius: 50%;
+    	float: left;
+    }
+    </style>
+</head>
+​
+<body>
+    <script>
+    // 100 times
+    for (var i = 0; i < 100; i++) {
+    	// Make a div
+    	var div = document.createElement('div');
+​
+    	// Set its width and height proportional to the number i
+    	div.style.width = i + 'px';
+    	div.style.height = i + 'px';
+​
+    	// And stick it in the document
+    	document.body.appendChild(div);
+    }
+    </script>
+</body>
+​
+</html>
