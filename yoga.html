@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>30-Day Drawing Challenge, Continued</title>
+</head>
+
+<style type="text/css">
+
+div#yoga {
+	width: 800px;
+	height: 600px;
+	background-image: url(yoga.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	border-style: 
+	
+}
+
+div#yoga:hover {
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+  animation-iteration-count: infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+div#namaste {
+
+position: absolute;
+left: 175px;
+top: 350px;
+font-family: helvetica;
+font-weight: bolder;
+font-size: 300%
+
+ 
+}
+
+div#namaste:hover {
+animation-name: goRight;
+animation-duration: 5s
+    
+
+}
+
+@keyframes goRight{
+from {
+    -webkit-transform: translate(0,0); opacity: 0%
+  }
+
+  to {
+    -webkit-transform: translate(1920px,0); opacity: 100%
+  }
+}
+
+	</style>
+<body>
+	
+	<div id="yoga">
+	<div id="namaste">NAMASTE, BITCHES</div>
+
+	</body>
+</html>
