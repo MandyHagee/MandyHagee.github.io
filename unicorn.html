@@ -13,14 +13,25 @@ div#unicorn {
 	position: absolute;
 	top: 50px;
 	left: 200px;
+	animation-name: unicorn;
+	animation-duration: 10s
+	
+
+
+
 }
 
-body {
-	background-color: yellow;
-}
-
+@keyframes unicorn {
+    0%   {background-color: #FF00FF;}
+    25%  {background-color: #FFFF00;}
+    50%  {background-color: #00FFFF;}
+    100% {background-color: #00FF00;}
+   
+   
 </style>
+	
 <div id="unicorn"></div>
 <body>
+
 </body>
 </html>
